@@ -1,0 +1,18 @@
+
+# Python
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+
+# Allow example environment configuration
+!.env.example
+
+# React / Node
+frontend/node_modules/
+frontend/dist/
+
+# Editors and operating system
+.vscode/
+.DS_Store
