@@ -18,7 +18,7 @@ function App() {
     setError("");
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/generate", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/generate`,{
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt }),
@@ -45,7 +45,7 @@ function App() {
       <nav className="navbar">
         <div className="brand">
           <div className="brand-icon">✦</div>
-          <span>Nova<span className="brand-light"> AI</span></span>
+          <span>Dillip<span className="brand-light"> AI</span></span>
         </div>
         <div className="status">
           <span className="status-dot" />
@@ -56,7 +56,7 @@ function App() {
       <main className="workspace">
         <div className="hero">
           <div className="eyebrow">YOUR AI WORKSPACE</div>
-          <h1>Ideas into <span>answers.</span></h1>
+          <h1>Idea into <span>love.</span></h1>
           <p>Ask anything. Explore ideas. Get things done.</p>
         </div>
 
@@ -151,7 +151,7 @@ function App() {
         )}
       </main>
 
-      <footer>Nova AI · Your ideas, powered by intelligence.</footer>
+      <footer>Dillip AI · Your ideas, made by Love.</footer>
     </div>
   );
 }
